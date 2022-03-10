@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a=+prompt("Nhap a");
+    let b=+prompt("Nhap b");
+    let c=+prompt("Nhap c");
+    if (a*a+b*b==c*c||b*b+c*c==a*a||a*a+c*c==b*b){
+        alert("Đó là tam giác vuông")
+    }else
+    {if(a==b&&b==c){alert("Đó là tam giác đều")
+    }else
+    {if((a+b>c)||(a+c>b)||(b+c>a)){
+        alert("do la hinh tam giac")
+    }else
+    alert("Đó là tam gíac cân")}
+    }
+</script>
+
+</body>
+</html>
