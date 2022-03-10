@@ -5,7 +5,46 @@
     <title>Title</title>
 </head>
 <body>
-<input type="text" id="a">
+<input type="text" id='scr'></input>
+<br>
+<button onclick="nhap ('1')">1</button>
+<button onclick="nhap('2')">2</button>
+<button onclick="nhap('4')">3</button>
+<button onclick="nhap('5')">4</button>
+<button onclick="nhap('6')">5</button>
+<br>
+<button onclick="nhap('+')">+</button>
+<button onclick="nhap('-')">-</button>
+<button onclick="nhap('*')">*</button>
+<button onclick="nhap('/')">/</button>
+<button onclick="kq()">=</button>
+<script>
+    let scr=document.getElementById('scr');
+    function nhap(kt) {
+        scr.value=scr.value + kt;
+    }
+    function kq(){
+        scr.value=eval(scr.value);
+
+    }
+
+
+
+
+
+
+</script>
+
+
+
 
 </body>
+
+
+
+
+
+
+
+
 </html>
