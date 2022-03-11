@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body id="bd">
+<h1>Do you love me ?</h1>
+<button onclick="yes()">Yes</button>
+<button  id='btn' style="position: absolute"; left="50px"; onmouseover="dichuyen()" >No</button>
+<script>
+    let bd=document.getElementById("bd")
+    let btn=document.getElementById('btn');
+function dichuyen(){
+    btn.style.left=Math.random()*200 + 'px'
+    btn.style.top=Math.random()*500 + 'px'
+}
+function yes(){
+    bd.style.background="url('https://toigingiuvedep.vn/wp-content/uploads/2021/04/hinh-anh-yeu-nhau.gif')";
+}
+</script>
+</body>
+</html>

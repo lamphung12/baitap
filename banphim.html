@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="docReady()">
+<img id="anh" src="https://photo-cms-anninhthudo.zadn.vn/Uploaded/2021/199/2019_06_30/e8kq8y.gif"
+     style="position:absolute;left:50px; top:50px;" height="200" width="200"/>
+<script>
+    function rightArrowPressed() {
+        let anh = document.getElementById('anh');
+        anh.style.top = parseInt(anh.style.top) + 10 + 'px';
+    }
+
+    function downArrowPressed() {
+        let anh = document.getElementById('anh');
+        anh.style.top = parseInt(anh.style.top) - 10 + 'px';
+    }
+
+    function upArrowPressed() {
+        let anh = document.getElementById('anh');
+        anh.style.left = parseInt(anh.style.left) + 10 + 'px';
+    }
+
+    function leftArrowPressed() {
+        let anh = document.getElementById('anh');
+        anh.style.left = parseInt(anh.style.left) - 10 + 'px';
+    }
+
+    function moveSelection(evt) {
+        switch (evt.keyCode) {
+            case 37:
+                leftArrowPressed();
+                break;
+            case 39:
+                rightArrowPressed();
+                break;
+            case 38:
+                upArrowPressed();
+                break;
+            case 40:
+                downArrowPressed();
+                break;
+        }
+    }
+    function docReady() {
+        window.addEventListener('keydown', moveSelection);
+    }
+</script>
+
+
+</body>
+</html>
