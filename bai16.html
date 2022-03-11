@@ -5,13 +5,16 @@
     <title>Title</title>
 </head>
 <body>
-<input type="text">
-<input type="text">
+<h1>Doanh so</h1>
+<input id="ds" type="text">
+<h2>Thu nhap</h2>
+<button onclick="kp()">ket qua</button>
 <script>
-
-
-
-
+    function kq() {
+        let ds = +document.getElementById("ds").value;
+        let tn = (ds/100);
+        document.write("Ket qua: " + tn);
+    }
 </script>
 </body>
 
