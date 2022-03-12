@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1> Kiểm tra tuổi của 1 người</h1>
+<input type="text" id="t">
+<button onclick="kt()">Kiem tra</button>
+<script>
+    function kt(){
+        let t=+document.getElementById("t").value;
+        if(t>0 && t<120){
+            document.write("Đó là tuổi của 1 người")
+        }else{document.write("Nhap không chính xác")}
+    }
+</script>
+</body>
+</html>

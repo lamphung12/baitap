@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Điều kiện để trở thành 1 tam giác</h1>
+<p>Cạnh a</p>
+<input type="text" id="a">
+<p>Cạnh b</p>
+<input type="text" id="b">
+<p>Cạnh c</p>
+<input type="text" id="c">
+<button onclick="kt()">Kiểm tra</button>
+<script>
+    function kt(){
+        let a =+document.getElementById("a").value;
+        let b =+document.getElementById("b").value;
+        let c =+document.getElementById("c").value;
+        if(a> 0 && b>0 && c>0 && a + b > c && b + c > a && a + c > b){
+            document.write("Đó là 3 cạnh của 1 tam giác")
+        }else{document.write("Đó không phải là 3 cạnh của 1 tam giác")}
+    }
+</script>
+</body>
+</html>
