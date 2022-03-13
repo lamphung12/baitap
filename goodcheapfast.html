@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="g" type="checkbox" onchange="chang()">Good<br>
+<input id="c" type="checkbox" onchange="chang1()">Cheap<br>
+<input id="f" type="checkbox" onchange="chang2()">Fast<br>
+<script>
+let g=document.getElementById("g");
+let c=document.getElementById("c");
+let f=document.getElementById("f");
+function chang(){
+    if(g.checked == true && c.checked == true && f.checked==true){
+        g.checked = false
+    }
+}
+function chang1(){
+    if(g.checked == true && c.checked == true && f.checked==true){
+        f.checked = false
+    }
+}
+function chang2(){
+    if(g.checked == true && c.checked == true && f.checked==true){
+        c.checked = false
+    }
+}
+</script>
+</body>
+</html>
