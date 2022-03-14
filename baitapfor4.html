@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="ktra()">In ra</button>
+<h2 id="cd"></h2>
+<script>
+    function ktra() {
+        let text = "";
+        let f0 = 0;
+        let f1 = 1;
+        let count = 1;
+        while (count > 0) {
+            let f2 = f0 + f1;
+            if (f2 % 5 == 0) {
+                text = text + "" + f2;
+                break;
+            }
+            f0 = f1;
+            f1 = f2;
+            count++;
+        }
+        document.getElementById("cd").innerText="So dau tien chia het cho 5 la: "+text;
+    }
+
+</script>
+</body>
+</html>
